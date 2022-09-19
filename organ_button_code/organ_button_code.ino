@@ -1,6 +1,6 @@
 #include <string.h> //For the copy function
 
-#define BUTTONS_PER_MUX 12
+#define BUTTONS_PER_MUX 16
 
 // Define pins for the Mux'es 
 int pin_Out_S0 = 1;
@@ -12,9 +12,9 @@ int pin_In_Mux2 = 7;
 int pin_In_Mux3 = 8;
 
 // Map MIDI CC MIDI_CHANNELs to knobs numbered left to right.
-int Mux1_cc_values[12] ={185,186,187,188,189,190,191,192,193,194,195,196};
-int Mux2_cc_values[12] ={197,198,199,200,201,202,203,204,205,206,207,208};
-int Mux3_cc_values[12] ={209,210,211,212,213,214,215,216,217,218,219,220};
+int Mux1_cc_values[16] ={32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47};
+int Mux2_cc_values[16] ={48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63};
+int Mux3_cc_values[16] ={64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79};
 int Mux1_State[BUTTONS_PER_MUX], Mux2_State[BUTTONS_PER_MUX], Mux3_State[BUTTONS_PER_MUX]={0};
 int Mux1_Old_State[BUTTONS_PER_MUX], Mux2_Old_State[BUTTONS_PER_MUX], Mux3_Old_State[BUTTONS_PER_MUX] = {0};
 
